@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./sass/index.scss" />
+  <link rel="stylesheet" href="./css/modern-normalize.css" />
+  <!-- <link rel="stylesheet" href="modern-normalize.css" /> -->
+
+  <title>Homework 10-scroll</title>
+  <!-- <script src="/src/index.js" type="module"></script> -->
+</head>
+
+<body>
+  <!-- <div class="searchbox">
+    <input autocomplete="off" type="text" name="login" placeholder="Enter GitHub username" />
+  </div>
+  <div class="profile-section"></div> -->
+
+
+  <!-- ! с кнопкой -->
+  <form class="form-inline search-form js-search-form">
+    <div class="form-group mx-sm-3 mb-2">
+      <label for="searchQuery" class="sr-only">Что ищем?</label>
+      <input type="text" class="form-control" placeholder="Что ищем?" autocomplete="off" />
+    </div>
+    <!-- <input type="text" name="login" placeholder="Enter GitHub username" autocomplete="off"/> -->
+    <button class="btn btn-primary mb-2" type="submit">Search</button>
+  </form>
+  <!-- <div class="profile-section"></div> -->
+  <ul class="articles js-articles-container"></ul>
+  <button type="button" class="btn btn-primary button" data-action="load-more">
+    <span class="spinner-border spiner-border-sn spinner is-hidden" role="status" aria-hidden="true"></span>
+    <!-- <span class="label">Показать еще</span> -->
+  </button>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
